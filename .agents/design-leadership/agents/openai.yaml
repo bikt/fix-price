@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design Leadership"
+  short_description: "Improves design teams, rituals, quality, and growth"
+  default_prompt: "Use $design-leadership to diagnose this design team problem and propose concrete operating changes."
+
+policy:
+  allow_implicit_invocation: true

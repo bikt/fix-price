@@ -1,0 +1,7 @@
+interface:
+  display_name: "Wiki"
+  short_description: "Maintains project wiki, Buildin context, local docs, decisions, and artifact links"
+  default_prompt: "Use $wiki to update project documentation, decisions, knowledge base context, and links between artifacts."
+
+policy:
+  allow_implicit_invocation: true

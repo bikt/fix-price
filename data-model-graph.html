@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fix-Price Data Graph</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111315;
+      --panel: #1b1f23;
+      --panel-2: #222830;
+      --text: #eef2f5;
+      --muted: #9aa6b2;
+      --line: #48525d;
+      --green: #91c30f;
+      --blue: #3c7be0;
+      --amber: #f3b64b;
+      --red: #e85d4a;
+      --violet: #9b7cff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, Roboto, "Segoe UI", Arial, sans-serif;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      min-height: 100vh;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 24px 12px;
+      border-bottom: 1px solid #252b31;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 750;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .graph-wrap {
+      position: relative;
+      flex: 1;
+      min-height: 640px;
+      overflow: auto;
+      padding: 16px;
+    }
+
+    svg {
+      display: block;
+      min-width: 1040px;
+      min-height: 720px;
+      width: 100%;
+      height: calc(100vh - 78px);
+    }
+
+    .edge {
+      stroke: var(--line);
+      stroke-width: 2;
+      opacity: .8;
+    }
+
+    .edge-label {
+      fill: var(--muted);
+      font-size: 12px;
+      pointer-events: none;
+    }
+
+    .node rect {
+      stroke: rgba(255,255,255,.16);
+      stroke-width: 1;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,.22));
+      transition: stroke .15s ease, filter .15s ease, transform .15s ease;
+    }
+
+    .node text {
+      fill: var(--text);
+      pointer-events: none;
+    }
+
+    .node .kind {
+      fill: rgba(238,242,245,.72);
+      font-size: 11px;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .node .title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .node {
+      cursor: pointer;
+    }
+
+    .node:hover rect,
+    .node.active rect {
+      stroke: rgba(255,255,255,.62);
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,.36));
+    }
+
+    .node.active rect {
+      stroke: #ffffff;
+      stroke-width: 2;
+    }
+
+    aside {
+      border-left: 1px solid #252b31;
+      background: var(--panel);
+      padding: 22px;
+      min-width: 0;
+    }
+
+    .panel-title {
+      margin: 0 0 4px;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .panel-kind {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .panel-desc {
+      margin: 0 0 18px;
+      color: #d9e0e7;
+      line-height: 1.48;
+    }
+
+    .links {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 12px;
+      border-radius: 8px;
+      background: var(--panel-2);
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .links a:hover {
+      border-color: rgba(255,255,255,.28);
+    }
+
+    .meta {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid #30363d;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 900px) {
+      .shell {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        border-left: 0;
+        border-top: 1px solid #252b31;
+      }
+
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .legend {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main>
+      <header>
+        <h1>Fix-Price Data Graph</h1>
+        <div class="legend" aria-label="Типы узлов">
+          <span style="color: var(--green)"><i class="dot"></i>Project</span>
+          <span style="color: var(--blue)"><i class="dot"></i>Knowledge</span>
+          <span style="color: var(--amber)"><i class="dot"></i>Kanban</span>
+          <span style="color: var(--violet)"><i class="dot"></i>Design</span>
+          <span style="color: var(--red)"><i class="dot"></i>Rules</span>
+        </div>
+      </header>
+      <div class="graph-wrap">
+        <svg id="graph" viewBox="0 0 1180 720" role="img" aria-label="Кликабельный граф данных проекта Fix-Price">
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+              <path d="M0,0 L10,4 L0,8 Z" fill="#48525d"></path>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+    </main>
+    <aside>
+      <h2 class="panel-title" id="detail-title">Project</h2>
+      <p class="panel-kind" id="detail-kind">core entity</p>
+      <p class="panel-desc" id="detail-desc"></p>
+      <div class="links" id="detail-links"></div>
+      <div class="meta" id="detail-meta"></div>
+    </aside>
+  </div>
+
+  <script>
+    const nodes = [
+      {
+        id: "project",
+        title: "Fix-Price",
+        kind: "Project",
+        color: "#91c30f",
+        x: 500,
+        y: 42,
+        w: 170,
+        h: 72,
+        desc: "Центральная сущность проекта. Собирает локальные документы, Buildin-базу знаний, канбан и источники дизайн-системы.",
+        links: [
+          ["PROJECT_CONTEXT.md", "PROJECT_CONTEXT.md"],
+          ["design-system-map.md", "design-system-map.md"],
+          ["data-model.md", "data-model.md"]
+        ],
+        meta: "Current path: C:\\Users\\mrbik\\Desktop\\AI projects\\projects\\fix-price"
+      },
+      {
+        id: "workspace",
+        title: "Local Workspace",
+        kind: "Project",
+        color: "#91c30f",
+        x: 82,
+        y: 170,
+        w: 190,
+        h: 72,
+        desc: "Локальная рабочая папка проекта с markdown-артефактами и папкой агентов.",
+        links: [["Project context", "PROJECT_CONTEXT.md"]],
+        meta: "Root: C:\\Users\\mrbik\\Desktop\\AI projects"
+      },
+      {
+        id: "docs",
+        title: "Project Docs",
+        kind: "Knowledge",
+        color: "#3c7be0",
+        x: 82,
+        y: 328,
+        w: 190,
+        h: 72,
+        desc: "Локальная база знаний: контекст проекта, карта дизайн-системы, модель данных и кликабельный граф.",
+        links: [
+          ["PROJECT_CONTEXT.md", "PROJECT_CONTEXT.md"],
+          ["design-system-map.md", "design-system-map.md"],
+          ["data-model.md", "data-model.md"]
+        ],
+        meta: "Формат: Markdown + Mermaid + HTML."
+      },
+      {
+        id: "buildin",
+        title: "Buildin",
+        kind: "Knowledge",
+        color: "#3c7be0",
+        x: 372,
+        y: 170,
+        w: 190,
+        h: 72,
+        desc: "Внешняя база знаний проекта, доступ получен через invite/cooperate-ссылку.",
+        links: [["Open Buildin", "https://buildin.ai/5d857221-669e-480d-bc9e-8261f9baad5a"]],
+        meta: "Page: Работа."
+      },
+      {
+        id: "board",
+        title: "Fix-Price Kanban",
+        kind: "Kanban",
+        color: "#f3b64b",
+        x: 660,
+        y: 170,
+        w: 210,
+        h: 72,
+        desc: "Канбан-доска Fix-Price внутри страницы Работа. Используется для задач, страниц и рабочих статусов.",
+        links: [["Buildin board", "https://buildin.ai/5d857221-669e-480d-bc9e-8261f9baad5a"]],
+        meta: "Known view: Work / Kanban."
+      },
+      {
+        id: "backlog",
+        title: "Backlog",
+        kind: "Kanban Column",
+        color: "#f3b64b",
+        x: 548,
+        y: 328,
+        w: 170,
+        h: 72,
+        desc: "Колонка для задач и страниц, которые еще не взяты в текущую работу.",
+        links: [["Open Buildin", "https://buildin.ai/5d857221-669e-480d-bc9e-8261f9baad5a"]],
+        meta: "Known cards: FPDS Страницы, Из ретро, тест1."
+      },
+      {
+        id: "today",
+        title: "Today",
+        kind: "Kanban Column",
+        color: "#f3b64b",
+        x: 780,
+        y: 328,
+        w: 170,
+        h: 72,
+        desc: "Колонка задач на сегодня.",
+        links: [["Open Buildin", "https://buildin.ai/5d857221-669e-480d-bc9e-8261f9baad5a"]],
+        meta: "Known cards: fpds магазины, fpds главная, codex-test."
+      },
+      {
+        id: "test1",
+        title: "тест1",
+        kind: "Kanban Card",
+        color: "#f3b64b",
+        x: 548,
+        y: 486,
+        w: 170,
+        h: 72,
+        desc: "Тестовая страница/карточка, созданная в Backlog.",
+        links: [["Open Buildin", "https://buildin.ai/5d857221-669e-480d-bc9e-8261f9baad5a"]],
+        meta: "Column: Backlog."
+      },
+      {
+        id: "codex",
+        title: "codex-test",
+        kind: "Kanban Card",
+        color: "#f3b64b",
+        x: 780,
+        y: 486,
+        w: 170,
+        h: 72,
+        desc: "Тестовая задача в Today с lorem ipsum в описании.",
+        links: [["Open Buildin", "https://buildin.ai/5d857221-669e-480d-bc9e-8261f9baad5a"]],
+        meta: "Column: Today."
+      },
+      {
+        id: "figma",
+        title: "Figma Sources",
+        kind: "Design",
+        color: "#9b7cff",
+        x: 920,
+        y: 170,
+        w: 190,
+        h: 72,
+        desc: "Набор Figma-файлов, из которых берутся foundations, компоненты, шаблоны и app layouts.",
+        links: [["Source map", "design-system-map.md"]],
+        meta: "Source of truth for Android mockups."
+      },
+      {
+        id: "foundations",
+        title: "Foundations",
+        kind: "Design",
+        color: "#9b7cff",
+        x: 966,
+        y: 328,
+        w: 170,
+        h: 72,
+        desc: "Цвета, типографика, отступы, эффекты и иконки.",
+        links: [["Design map", "design-system-map.md"]],
+        meta: "Files: DS - Colors, DS - Android typography, DS - Gaps, DS - effects, DS - Icons."
+      },
+      {
+        id: "rules",
+        title: "Build Rules",
+        kind: "Rules",
+        color: "#e85d4a",
+        x: 966,
+        y: 486,
+        w: 170,
+        h: 72,
+        desc: "Правила сборки новых Android-макетов: использовать актуальные variables, styles, components и templates.",
+        links: [["Build rules", "design-system-map.md#build-rules-for-new-mockups"]],
+        meta: "Target app file: Android v2.0."
+      }
+    ];
+
+    const edges = [
+      ["project", "workspace", "stored in"],
+      ["workspace", "docs", "contains"],
+      ["project", "buildin", "uses"],
+      ["buildin", "board", "contains"],
+      ["board", "backlog", "groups"],
+      ["board", "today", "groups"],
+      ["backlog", "test1", "contains"],
+      ["today", "codex", "contains"],
+      ["project", "figma", "references"],
+      ["figma", "foundations", "provides"],
+      ["foundations", "rules", "constrains"],
+      ["rules", "project", "guides"]
+    ];
+
+    const svg = document.getElementById("graph");
+    const detailTitle = document.getElementById("detail-title");
+    const detailKind = document.getElementById("detail-kind");
+    const detailDesc = document.getElementById("detail-desc");
+    const detailLinks = document.getElementById("detail-links");
+    const detailMeta = document.getElementById("detail-meta");
+    const byId = Object.fromEntries(nodes.map((node) => [node.id, node]));
+
+    function center(node) {
+      return { x: node.x + node.w / 2, y: node.y + node.h / 2 };
+    }
+
+    function edgePoint(from, to) {
+      const a = center(from);
+      const b = center(to);
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
+      const scale = Math.max(Math.abs(dx) / (from.w / 2), Math.abs(dy) / (from.h / 2));
+      return { x: a.x + dx / scale, y: a.y + dy / scale };
+    }
+
+    function make(tag, attrs = {}) {
+      const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+      for (const [key, value] of Object.entries(attrs)) el.setAttribute(key, value);
+      return el;
+    }
+
+    function draw() {
+      for (const [fromId, toId, label] of edges) {
+        const from = byId[fromId];
+        const to = byId[toId];
+        const start = edgePoint(from, to);
+        const end = edgePoint(to, from);
+        const line = make("line", {
+          class: "edge",
+          x1: start.x,
+          y1: start.y,
+          x2: end.x,
+          y2: end.y,
+          "marker-end": "url(#arrow)"
+        });
+        svg.appendChild(line);
+
+        const text = make("text", {
+          class: "edge-label",
+          x: (start.x + end.x) / 2,
+          y: (start.y + end.y) / 2 - 6,
+          "text-anchor": "middle"
+        });
+        text.textContent = label;
+        svg.appendChild(text);
+      }
+
+      for (const node of nodes) {
+        const group = make("g", {
+          class: "node",
+          tabindex: "0",
+          role: "button",
+          "aria-label": node.title,
+          "data-id": node.id
+        });
+        const rect = make("rect", {
+          x: node.x,
+          y: node.y,
+          width: node.w,
+          height: node.h,
+          rx: "8",
+          fill: node.color
+        });
+        rect.style.fill = `color-mix(in srgb, ${node.color} 24%, #1b1f23)`;
+        group.appendChild(rect);
+
+        const kind = make("text", { class: "kind", x: node.x + 16, y: node.y + 23 });
+        kind.textContent = node.kind;
+        group.appendChild(kind);
+
+        const title = make("text", { class: "title", x: node.x + 16, y: node.y + 49 });
+        title.textContent = node.title;
+        group.appendChild(title);
+
+        group.addEventListener("click", () => selectNode(node.id));
+        group.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") selectNode(node.id);
+        });
+        svg.appendChild(group);
+      }
+    }
+
+    function selectNode(id) {
+      const node = byId[id];
+      document.querySelectorAll(".node").forEach((el) => {
+        el.classList.toggle("active", el.getAttribute("data-id") === id);
+      });
+      detailTitle.textContent = node.title;
+      detailKind.textContent = node.kind;
+      detailDesc.textContent = node.desc;
+      detailLinks.innerHTML = "";
+      for (const [label, href] of node.links) {
+        const link = document.createElement("a");
+        link.href = href;
+        link.textContent = label;
+        link.target = href.startsWith("http") ? "_blank" : "_self";
+        link.rel = "noreferrer";
+        const arrow = document.createElement("span");
+        arrow.textContent = ">";
+        link.appendChild(arrow);
+        detailLinks.appendChild(link);
+      }
+      detailMeta.textContent = node.meta;
+    }
+
+    draw();
+    selectNode("project");
+  </script>
+</body>
+</html>

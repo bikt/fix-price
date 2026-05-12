@@ -1,0 +1,7 @@
+interface:
+  display_name: "Senior Product Designer"
+  short_description: "Audits UX/UI, visual design, conversion, and product flows"
+  default_prompt: "Use $senior-product-designer to review this product experience and recommend senior-level UX/UI improvements."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "UX Writing"
+  short_description: "Improves interface copy"
+  default_prompt: "Use $ux-writing to improve this interface copy, labels, empty states, errors, and CTA wording."
+
+policy:
+  allow_implicit_invocation: true

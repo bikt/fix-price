@@ -1,0 +1,7 @@
+interface:
+  display_name: "System Analyst Superpower"
+  short_description: "Turns vague product, UX, and integration work into implementable specs"
+  default_prompt: "Use $system-analyst-superpower to analyze this feature, define requirements, data/process models, edge cases, and acceptance criteria."
+
+policy:
+  allow_implicit_invocation: true

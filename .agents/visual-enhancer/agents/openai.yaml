@@ -1,0 +1,7 @@
+interface:
+  display_name: "Visual Enhancer"
+  short_description: "Improves visual design of interfaces"
+  default_prompt: "Use $visual-enhancer to improve the visual design, composition, color, spacing, and polish of this interface."
+
+policy:
+  allow_implicit_invocation: true

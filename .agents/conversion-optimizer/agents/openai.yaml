@@ -1,0 +1,7 @@
+interface:
+  display_name: "Conversion Optimizer"
+  short_description: "Improves interfaces to increase conversion"
+  default_prompt: "Use $conversion-optimizer to analyze this interface flow and suggest concrete conversion improvements."
+
+policy:
+  allow_implicit_invocation: true

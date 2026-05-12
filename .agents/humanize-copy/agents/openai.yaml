@@ -1,0 +1,7 @@
+interface:
+  display_name: "Humanize Copy"
+  short_description: "Rewrites copy in a clear, natural human voice"
+  default_prompt: "Use $humanize-copy to rewrite this text so it sounds clear, natural, and human."
+
+policy:
+  allow_implicit_invocation: true

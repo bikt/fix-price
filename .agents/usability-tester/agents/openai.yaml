@@ -1,0 +1,7 @@
+interface:
+  display_name: "Usability Tester"
+  short_description: "Simulates users and finds UX problems"
+  default_prompt: "Use $usability-tester to walk through this flow as a user and identify usability problems."
+
+policy:
+  allow_implicit_invocation: true

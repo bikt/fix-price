@@ -1,0 +1,7 @@
+interface:
+  display_name: "Interaction Designer"
+  short_description: "Improves interaction patterns and UI motion"
+  default_prompt: "Use $interaction-designer to refine this interface interaction model, transitions, states, and feedback."
+
+policy:
+  allow_implicit_invocation: true

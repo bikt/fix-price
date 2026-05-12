@@ -1,0 +1,7 @@
+interface:
+  display_name: "Front-End"
+  short_description: "Builds and polishes frontend UI and apps"
+  default_prompt: "Use $front-end to build or improve this frontend interface with responsive layout and polished states."
+
+policy:
+  allow_implicit_invocation: true

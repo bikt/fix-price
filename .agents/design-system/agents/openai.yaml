@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design System"
+  short_description: "Creates and maintains design systems"
+  default_prompt: "Use $design-system to improve this design system, components, tokens, and consistency."
+
+policy:
+  allow_implicit_invocation: true

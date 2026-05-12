@@ -1,0 +1,7 @@
+interface:
+  display_name: "Heuristic Eval"
+  short_description: "Evaluates interfaces with Nielsen heuristics"
+  default_prompt: "Use $heuristic-eval to review this interface with Nielsen heuristics and list actionable UX issues."
+
+policy:
+  allow_implicit_invocation: true

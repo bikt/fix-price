@@ -1,0 +1,7 @@
+interface:
+  display_name: "Three.js 3D"
+  short_description: "Builds interactive web 3D with Three.js"
+  default_prompt: "Use $threejs-3d to build an interactive Three.js scene with responsive layout and polished lighting."
+
+policy:
+  allow_implicit_invocation: true

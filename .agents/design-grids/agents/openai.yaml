@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design Grids"
+  short_description: "Designs modular, asymmetric, and expressive grids"
+  default_prompt: "Use $design-grids to create a strong layout grid with hierarchy, rhythm, and intentional composition."
+
+policy:
+  allow_implicit_invocation: true

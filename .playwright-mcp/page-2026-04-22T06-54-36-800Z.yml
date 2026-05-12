@@ -1,0 +1,612 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - text: Продолжая просмотр этого сайта,
+        - generic [ref=e8]:
+          - text: Вы соглашаетесь на
+          - button "обработку файлов cookie" [ref=e9] [cursor=pointer]:
+            - link "обработку файлов cookie" [ref=e10]:
+              - /url: https://fix-price.com/doc/cookie_policy
+      - button "Иконка куки Понятно" [ref=e11] [cursor=pointer]:
+        - img "Иконка куки" [ref=e12]
+        - generic [ref=e13]: Понятно
+    - generic:
+      - banner:
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - generic [ref=e17]:
+              - generic [ref=e18]:
+                - generic [ref=e19]:
+                  - generic [ref=e20] [cursor=pointer]:
+                    - img [ref=e21]
+                    - generic [ref=e23]: Москва
+                  - generic [ref=e24]:
+                    - generic [ref=e25]: Ваш город Москва?
+                    - generic [ref=e26]:
+                      - button "Да" [ref=e27] [cursor=pointer]
+                      - button "Нет" [ref=e28] [cursor=pointer]
+                    - generic [ref=e29]: Наличие товара, цены и условия доставки зависят от выбранного города
+                - generic [ref=e30] [cursor=pointer]:
+                  - img [ref=e32]
+                  - generic [ref=e35]:
+                    - generic [ref=e36]: Доставка или самовывоз
+                    - generic [ref=e37]: Выберите способ получения
+              - generic [ref=e38]:
+                - link "Адреса магазинов" [ref=e39] [cursor=pointer]:
+                  - /url: /stores
+                - link "Работа у нас" [ref=e40] [cursor=pointer]:
+                  - /url: /work/store
+            - generic [ref=e42]:
+              - link "Акции" [ref=e43] [cursor=pointer]:
+                - /url: /specials
+              - link "Карта Fix Price" [ref=e44] [cursor=pointer]:
+                - /url: /bonus
+                - img [ref=e45]
+                - text: Карта Fix Price
+          - generic [ref=e47]:
+            - link [ref=e49] [cursor=pointer]:
+              - /url: /
+              - img [ref=e50]
+            - link "Каталог" [ref=e71] [cursor=pointer]:
+              - /url: /catalog
+              - img [ref=e72]
+              - generic [ref=e73]: Каталог
+            - generic [ref=e76]:
+              - button [disabled] [ref=e77]:
+                - img [ref=e78]
+              - searchbox "Начните поиск товара" [ref=e82]
+            - generic [ref=e83]:
+              - button "Войти" [ref=e84] [cursor=pointer]:
+                - img [ref=e85]
+                - generic [ref=e88]: Войти
+              - link "Избранное" [ref=e89] [cursor=pointer]:
+                - /url: /favorites
+                - img [ref=e91]
+                - generic [ref=e93]: Избранное
+              - link "Корзина" [ref=e94] [cursor=pointer]:
+                - /url: /cart
+                - img [ref=e96]
+                - generic [ref=e100]: Корзина
+          - generic [ref=e102]:
+            - link "Все для Пикника" [ref=e103] [cursor=pointer]:
+              - /url: https://fix-price.com/catalog/vse-dlya-piknika
+            - link "Распродажа! Всё по 35 руб" [ref=e104] [cursor=pointer]:
+              - /url: /catalog/vsye-po-35
+            - link "Спец цена по карте" [ref=e105] [cursor=pointer]:
+              - /url: /catalog/spets-tsena-po-karte
+            - link "Для дома" [ref=e106] [cursor=pointer]:
+              - /url: /catalog/dlya-doma
+            - link "Бытовая химия" [ref=e107] [cursor=pointer]:
+              - /url: /catalog/bytovaya-khimiya
+            - link "Продукты и напитки" [ref=e108] [cursor=pointer]:
+              - /url: /catalog/produkty-i-napitki
+            - link "Косметика и гигиена" [ref=e109] [cursor=pointer]:
+              - /url: /catalog/kosmetika-i-gigiena
+    - generic [ref=e115]:
+      - navigation "Breadcrumb" [ref=e116]:
+        - list [ref=e117]:
+          - listitem [ref=e118]:
+            - generic [ref=e119]:
+              - link "Главная" [ref=e120] [cursor=pointer]:
+                - /url: /
+              - img [ref=e122]
+          - listitem [ref=e124]:
+            - generic [ref=e125]:
+              - link "Каталог товаров" [ref=e126] [cursor=pointer]:
+                - /url: /catalog
+              - img [ref=e128]
+          - listitem [ref=e130]:
+            - generic [ref=e131]:
+              - link "Для дома" [ref=e132] [cursor=pointer]:
+                - /url: /catalog/dlya-doma
+              - img [ref=e134]
+          - listitem [ref=e136]:
+            - generic [ref=e137]:
+              - link "Нож кухонный, O’Kitchen, 24 см, в ассортименте":
+                - /url: /catalog/dlya-doma/p-5021725-noj-kuhonnyy-itchen-24-sm-v-assortimente
+      - generic [ref=e138]:
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e144]:
+                - img "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [ref=e145]
+                - img "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [ref=e146]
+              - generic [ref=e148]:
+                - img "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [ref=e149]
+                - img "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [ref=e150]
+              - generic [ref=e152]:
+                - img "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [ref=e153]
+                - img "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [ref=e154]
+              - generic [ref=e156]:
+                - img "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [ref=e157]
+                - img "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [ref=e158]
+            - button "Next slide" [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]:
+                - img
+            - generic [ref=e161]:
+              - button "Go to slide 1" [ref=e162] [cursor=pointer]
+              - button "Go to slide 2" [ref=e163] [cursor=pointer]
+              - button "Go to slide 3" [ref=e164] [cursor=pointer]
+              - button "Go to slide 4" [ref=e165] [cursor=pointer]
+          - generic [ref=e167]:
+            - img [ref=e169]
+            - img [ref=e171]
+            - img [ref=e173]
+            - img [ref=e175]
+        - generic [ref=e176]:
+          - generic [ref=e178]:
+            - heading "Нож кухонный, O’Kitchen, 24 см, в ассортименте" [level=1] [ref=e179]
+            - generic [ref=e180]:
+              - generic [ref=e181]: Арт. 5021725
+              - button [ref=e182] [cursor=pointer]:
+                - img [ref=e183]
+          - generic [ref=e186]:
+            - generic [ref=e187]:
+              - navigation [ref=e188]:
+                - tablist [ref=e189]:
+                  - tab "Описание" [selected] [ref=e190] [cursor=pointer]
+                  - tab "Характеристики" [ref=e191] [cursor=pointer]
+              - generic [ref=e193]:
+                - tabpanel [ref=e194]:
+                  - paragraph [ref=e195]: "Нож кухонный, O’Kitchen, станет универсальным помощником на кухне. Подходит для нарезки овощей и фруктов, а также для разделки мяса и рыбы. Острое лезвие из нержавеющей стали помогает получать аккуратные кубики и ровные слайсы, а эргономичная ручка с soft-touch покрытием обеспечивает комфортный и надёжный захват во время работы. Нож не впитывает запахи и не влияет на вкусовые качества продуктов. Длина: 24 см. Состав: нержавеющая сталь, полипропилен, ПВХ. Также Вы можете приобрести нож кухонный (ЛК: 5021726) длиной 20,5 см. Товар представлен в ассортименте. Эстетика Вашей кухни в коллекции «Минимализм&Уют»!"
+                - tabpanel [ref=e196]:
+                  - list [ref=e197]:
+                    - listitem [ref=e198]:
+                      - generic [ref=e199]: Бренд
+                      - link [ref=e202] [cursor=pointer]:
+                        - /url: /products?brand=20510
+                        - text: O'Kitchen
+                    - listitem [ref=e203]:
+                      - generic [ref=e204]: Артикул
+                      - generic [ref=e206]: "5021725"
+                    - listitem [ref=e207]:
+                      - generic [ref=e208]: Ширина упаковки
+                      - generic [ref=e210]: 70 мм
+                    - listitem [ref=e211]:
+                      - generic [ref=e212]: Высота упаковки
+                      - generic [ref=e214]: 20 мм
+                    - listitem [ref=e215]:
+                      - generic [ref=e216]: Длина упаковки
+                      - generic [ref=e218]: 320 мм
+                    - listitem [ref=e219]:
+                      - generic [ref=e220]: Вес упаковки
+                      - generic [ref=e222]: 55 г
+                    - listitem [ref=e223]:
+                      - generic [ref=e224]: Страна производства
+                      - generic [ref=e226]: Китай (КНР)
+                    - listitem [ref=e227]:
+                      - generic [ref=e228]: Сайт бренда
+                      - link [ref=e231] [cursor=pointer]:
+                        - /url: https://o-kitchen.ru/
+                        - img [ref=e232]
+            - generic [ref=e233]:
+              - paragraph [ref=e234]: Информация на сайте о товаре не гарантирует его наличие на складе или в розничном магазине. Цена…
+              - button "Еще" [ref=e235] [cursor=pointer]
+        - generic [ref=e236]:
+          - generic [ref=e240]: 99 ₽
+          - generic [ref=e241]:
+            - button "В корзину" [ref=e242] [cursor=pointer]:
+              - generic [ref=e243]: В корзину
+            - button [ref=e244] [cursor=pointer]:
+              - img [ref=e245]
+            - button [ref=e248] [cursor=pointer]:
+              - img [ref=e249]
+          - generic [ref=e251]:
+            - generic [ref=e252]: Вернем до 20% баллами
+            - img [ref=e253]
+          - generic [ref=e277]:
+            - generic [ref=e278]:
+              - img [ref=e280]
+              - generic [ref=e283]: Авторизуйтесь, выгоднее с картой
+            - generic [ref=e284]:
+              - img "Проверить наличие в магазинах" [ref=e286]
+              - generic [ref=e287]: Проверить наличие в магазинах
+          - generic [ref=e288]:
+            - paragraph [ref=e289]: Доставка и самовывоз
+            - generic [ref=e290]:
+              - img "Самовывоз" [ref=e291]
+              - generic [ref=e292]: Самовывоз
+              - generic [ref=e293]: "Из магазина: сегодня за 60 минут бесплатно"
+            - generic [ref=e294]:
+              - img "Доставка" [ref=e295]
+              - generic [ref=e296]: Доставка
+              - generic [ref=e297]: "Экспресс-доставка: от 1 часа"
+      - generic [ref=e298]:
+        - generic [ref=e299]: Похожие товары
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - generic [ref=e303]:
+              - generic [ref=e304] [cursor=pointer]:
+                - button [ref=e305]:
+                  - img [ref=e306]
+                - generic [ref=e310]:
+                  - link "Продукт" [ref=e311]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                    - img "Продукт" [ref=e312]
+                  - link [ref=e313]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e315]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e317]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e319]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e321]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e323]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e325]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e327]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e329]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e331]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                  - link [ref=e333]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                - generic "спец цена" [ref=e341]:
+                  - img [ref=e342]
+                  - generic [ref=e344]: спец цена
+                  - button [ref=e346]:
+                    - img [ref=e347]
+              - generic [ref=e349]:
+                - generic [ref=e353]:
+                  - generic [ref=e354]:
+                    - generic [ref=e355]:
+                      - img [ref=e356]
+                      - generic [ref=e379]: 105 ₽
+                    - generic [ref=e380]: 116 ₽
+                  - link "Салфетки бумажные, Plushe, 2 слоя, 230 шт., в ассортименте" [ref=e381] [cursor=pointer]:
+                    - /url: /catalog/dlya-doma/p-5024542-salfetki-bumajnye-lushe-2-sloya-230-sht-v-assortimente
+                - button "В корзину" [ref=e382] [cursor=pointer]:
+                  - img [ref=e384]
+                  - generic [ref=e388]: В корзину
+            - generic [ref=e389]:
+              - generic [ref=e390] [cursor=pointer]:
+                - button [ref=e391]:
+                  - img [ref=e392]
+                - link "Пакеты для хранения, BonHome, 26х40 см, 100 шт." [ref=e394]:
+                  - /url: /catalog/dlya-doma/p-5025171-pakety-dlya-hraneniya-onome-26h40-sm-100-sht
+                  - img "Пакеты для хранения, BonHome, 26х40 см, 100 шт." [ref=e395]
+                - generic "спец цена" [ref=e396]:
+                  - img [ref=e397]
+                  - generic [ref=e399]: спец цена
+                  - button [ref=e401]:
+                    - img [ref=e402]
+              - generic [ref=e404]:
+                - generic [ref=e408]:
+                  - generic [ref=e409]:
+                    - generic [ref=e410]:
+                      - img [ref=e411]
+                      - generic [ref=e434]: 59 ₽
+                    - generic [ref=e435]: 69 ₽
+                  - link "Пакеты для хранения, BonHome, 26х40 см, 100 шт." [ref=e436] [cursor=pointer]:
+                    - /url: /catalog/dlya-doma/p-5025171-pakety-dlya-hraneniya-onome-26h40-sm-100-sht
+                - button "В корзину" [ref=e437] [cursor=pointer]:
+                  - img [ref=e439]
+                  - generic [ref=e443]: В корзину
+            - generic [ref=e444]:
+              - generic [ref=e445] [cursor=pointer]:
+                - button [ref=e446]:
+                  - img [ref=e447]
+                - generic [ref=e451]:
+                  - link "Продукт" [ref=e452]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                    - img "Продукт" [ref=e453]
+                  - link [ref=e454]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                  - link [ref=e456]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                  - link [ref=e458]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                  - link [ref=e460]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                  - link [ref=e462]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                  - link [ref=e464]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                  - link [ref=e466]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                  - link [ref=e468]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                  - link [ref=e470]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+              - generic [ref=e478]:
+                - generic [ref=e482]:
+                  - generic [ref=e484]: 79 ₽
+                  - link "Салфетки бумажные \"Duet\", PLUSHE, 1 слой, 250 шт., в ассортименте" [ref=e485] [cursor=pointer]:
+                    - /url: /catalog/dlya-doma/p-5024276-salfetki-bumajnye-uet--1-sloy-250-sht-v-assortimente
+                - button "В корзину" [ref=e486] [cursor=pointer]:
+                  - img [ref=e488]
+                  - generic [ref=e492]: В корзину
+            - generic [ref=e493]:
+              - generic [ref=e494] [cursor=pointer]:
+                - button [ref=e495]:
+                  - img [ref=e496]
+                - generic [ref=e500]:
+                  - link "Продукт" [ref=e501]:
+                    - /url: /catalog/dlya-doma/p-5025325-kryshka-na-rezinke-onome-38-sm-100-sht
+                    - img "Продукт" [ref=e502]
+                  - link [ref=e503]:
+                    - /url: /catalog/dlya-doma/p-5025325-kryshka-na-rezinke-onome-38-sm-100-sht
+                  - link [ref=e505]:
+                    - /url: /catalog/dlya-doma/p-5025325-kryshka-na-rezinke-onome-38-sm-100-sht
+                  - link [ref=e507]:
+                    - /url: /catalog/dlya-doma/p-5025325-kryshka-na-rezinke-onome-38-sm-100-sht
+              - generic [ref=e514]:
+                - generic [ref=e518]:
+                  - generic [ref=e520]: 99 ₽
+                  - link "Крышка на резинке, BonHome, 38 см, 100 шт." [ref=e521] [cursor=pointer]:
+                    - /url: /catalog/dlya-doma/p-5025325-kryshka-na-rezinke-onome-38-sm-100-sht
+                - button "В корзину" [ref=e522] [cursor=pointer]:
+                  - img [ref=e524]
+                  - generic [ref=e528]: В корзину
+            - generic [ref=e529]:
+              - generic [ref=e530] [cursor=pointer]:
+                - button [ref=e531]:
+                  - img [ref=e532]
+                - generic [ref=e536]:
+                  - link "Продукт" [ref=e537]:
+                    - /url: /catalog/dlya-doma/p-5025205-bumaga-dlya-vypechki-onome-8-m-h-38-sm
+                    - img "Продукт" [ref=e538]
+                  - link [ref=e539]:
+                    - /url: /catalog/dlya-doma/p-5025205-bumaga-dlya-vypechki-onome-8-m-h-38-sm
+                - generic "спец цена" [ref=e544]:
+                  - img [ref=e545]
+                  - generic [ref=e547]: спец цена
+                  - button [ref=e549]:
+                    - img [ref=e550]
+              - generic [ref=e552]:
+                - generic [ref=e556]:
+                  - generic [ref=e557]:
+                    - generic [ref=e558]:
+                      - img [ref=e559]
+                      - generic [ref=e582]: 89 ₽
+                    - generic [ref=e583]: 99 ₽
+                  - link "Бумага для выпечки, BonHome, 8 м х 38 см" [ref=e584] [cursor=pointer]:
+                    - /url: /catalog/dlya-doma/p-5025205-bumaga-dlya-vypechki-onome-8-m-h-38-sm
+                - button "В корзину" [ref=e585] [cursor=pointer]:
+                  - img [ref=e587]
+                  - generic [ref=e591]: В корзину
+            - generic [ref=e592]:
+              - generic [ref=e593] [cursor=pointer]:
+                - button [ref=e594]:
+                  - img [ref=e595]
+                - link "Пакеты фасовочные в рулоне, BonHome, повышенной прочности, 24х37 см, 70 шт." [ref=e597]:
+                  - /url: /catalog/dlya-doma/p-5025154-pakety-fasovochnye-v-rulone-onome-povyshennoy-prochnosti-24h37-sm-70-sht
+                  - img "Пакеты фасовочные в рулоне, BonHome, повышенной прочности, 24х37 см, 70 шт." [ref=e598]
+              - generic [ref=e599]:
+                - generic [ref=e603]:
+                  - generic [ref=e605]: 69 ₽
+                  - link "Пакеты фасовочные в рулоне, BonHome, повышенной прочности, 24х37 см, 70 шт." [ref=e606] [cursor=pointer]:
+                    - /url: /catalog/dlya-doma/p-5025154-pakety-fasovochnye-v-rulone-onome-povyshennoy-prochnosti-24h37-sm-70-sht
+                - button "В корзину" [ref=e607] [cursor=pointer]:
+                  - img [ref=e609]
+                  - generic [ref=e613]: В корзину
+          - button "Next slide" [ref=e614] [cursor=pointer]:
+            - img [ref=e615]
+      - generic [ref=e617]:
+        - generic [ref=e618]: Популярные категории
+        - generic [ref=e620]:
+          - link "Сад и огород" [ref=e621] [cursor=pointer]:
+            - /url: /catalog/sad-i-ogorod
+            - img [ref=e622]
+            - generic [ref=e623]: Сад и огород
+          - link "Кондитерские изделия" [ref=e624] [cursor=pointer]:
+            - /url: /catalog/produkty-i-napitki/konditerskie-izdeliya
+            - img [ref=e625]
+            - generic [ref=e626]: Кондитерские изделия
+          - link "Книги, раскраски" [ref=e627] [cursor=pointer]:
+            - /url: /catalog/knigi
+            - img [ref=e628]
+            - generic [ref=e629]: Книги, раскраски
+          - link "Средства для стирки" [ref=e630] [cursor=pointer]:
+            - /url: /catalog/bytovaya-khimiya/sredstva-dlya-stirki
+            - img [ref=e631]
+            - generic [ref=e632]: Средства для стирки
+          - link "Гигиенические средства" [ref=e633] [cursor=pointer]:
+            - /url: /catalog/kosmetika-i-gigiena/gigienicheskie-sredstva
+            - img [ref=e634]
+            - generic [ref=e635]: Гигиенические средства
+          - link "Тетради и блокноты" [ref=e636] [cursor=pointer]:
+            - /url: /catalog/kantstovary/tetradi-i-bloknoty
+            - img [ref=e637]
+            - generic [ref=e638]: Тетради и блокноты
+          - link "Организация хранения" [ref=e639] [cursor=pointer]:
+            - /url: /catalog/dlya-doma/organizatsiya-khraneniya
+            - img [ref=e640]
+            - generic [ref=e641]: Организация хранения
+          - link "Подарочная упаковка" [ref=e642] [cursor=pointer]:
+            - /url: /catalog/suveniry-i-podarki/podarochnaya-upakovka
+            - img [ref=e643]
+            - generic [ref=e644]: Подарочная упаковка
+          - link "Одежда и обувь" [ref=e645] [cursor=pointer]:
+            - /url: /catalog/odezhda
+            - img [ref=e646]
+            - generic [ref=e647]: Одежда и обувь
+          - link "Аксессуары для волос" [ref=e648] [cursor=pointer]:
+            - /url: /catalog/aksessuary/aksessuary-dlya-volos
+            - img [ref=e649]
+            - generic [ref=e650]: Аксессуары для волос
+          - link "Для волос" [ref=e651] [cursor=pointer]:
+            - /url: /catalog/krasota-i-zdorove/dlya-volos
+            - img [ref=e652]
+            - generic [ref=e653]: Для волос
+          - link "Органайзеры для косметики" [ref=e654] [cursor=pointer]:
+            - /url: /catalog/aksessuary/organayzery-dlya-kosmetiki
+            - img [ref=e655]
+            - generic [ref=e656]: Органайзеры для косметики
+          - link "Для кухни" [ref=e657] [cursor=pointer]:
+            - /url: /catalog/dlya-doma/dlya-kukhni
+            - img [ref=e658]
+            - generic [ref=e659]: Для кухни
+          - link "Аксессуары для одежды" [ref=e660] [cursor=pointer]:
+            - /url: /catalog/dlya-doma/aksessuary-dlya-odezhdy
+            - img [ref=e661]
+            - generic [ref=e662]: Аксессуары для одежды
+          - link "Сейчас покупают" [ref=e663] [cursor=pointer]:
+            - /url: /catalog/seychas-pokupayut
+            - img [ref=e664]
+            - generic [ref=e665]: Сейчас покупают
+          - link "Горшки и кашпо" [ref=e666] [cursor=pointer]:
+            - /url: /catalog/sad-i-ogorod/gorshki-i-kashpo
+            - img [ref=e667]
+            - generic [ref=e668]: Горшки и кашпо
+          - link "Спец цена по карте" [ref=e669] [cursor=pointer]:
+            - /url: /catalog/spets-tsena-po-karte
+            - img [ref=e670]
+            - generic [ref=e671]: Спец цена по карте
+          - link "Соки и нектары" [ref=e672] [cursor=pointer]:
+            - /url: /catalog/produkty-i-napitki/soki-i-nektary
+            - img [ref=e673]
+            - generic [ref=e674]: Соки и нектары
+          - link "Книги" [ref=e675] [cursor=pointer]:
+            - /url: /catalog/knigi/knigi
+            - img [ref=e676]
+            - generic [ref=e677]: Книги
+          - link "Отбеливатели и пятновыводители" [ref=e678] [cursor=pointer]:
+            - /url: /catalog/bytovaya-khimiya/otbelivateli-i-pyatnovyvoditeli
+            - img [ref=e679]
+            - generic [ref=e680]: Отбеливатели и пятновыводители
+          - link "Вазы, цветы, флористика" [ref=e681] [cursor=pointer]:
+            - /url: /catalog/suveniry-i-podarki/vazy-tsvety-floristika
+            - img [ref=e682]
+            - generic [ref=e683]: Вазы, цветы, флористика
+          - link "Свечи, диффузоры, подсвечники" [ref=e684] [cursor=pointer]:
+            - /url: /catalog/suveniry-i-podarki/svechi-diffuzory-podsvechniki
+            - img [ref=e685]
+            - generic [ref=e686]: Свечи, диффузоры, подсвечники
+          - link "Игры на улице" [ref=e687] [cursor=pointer]:
+            - /url: /catalog/igrushki/igry-na-ulitse
+            - img [ref=e688]
+            - generic [ref=e689]: Игры на улице
+          - link "Все для вечеринки" [ref=e690] [cursor=pointer]:
+            - /url: /catalog/dekor-dlya-doma-tovary-dlya-prazdnika/vse-dlya-vecherinki
+            - img [ref=e691]
+            - generic [ref=e692]: Все для вечеринки
+          - link "Все для пикника" [ref=e693] [cursor=pointer]:
+            - /url: /catalog/vse-dlya-piknika
+            - img [ref=e694]
+            - generic [ref=e695]: Все для пикника
+          - link "Бытовая химия" [ref=e696] [cursor=pointer]:
+            - /url: /catalog/bytovaya-khimiya
+            - img [ref=e697]
+            - generic [ref=e698]: Бытовая химия
+          - link "Косметика и гигиена" [ref=e699] [cursor=pointer]:
+            - /url: /catalog/kosmetika-i-gigiena
+            - img [ref=e700]
+            - generic [ref=e701]: Косметика и гигиена
+      - generic [ref=e702]:
+        - generic [ref=e703]:
+          - heading "Хорошие новости — здесь!" [level=2] [ref=e704]
+          - generic [ref=e705]: Подпишитесь на рассылку, чтобы получать промокоды, информацию об акциях и новинках
+        - img [ref=e706]
+        - generic [ref=e707]:
+          - generic [ref=e709]:
+            - generic [ref=e710]: Введите email
+            - textbox [ref=e712]
+          - button "Подписаться" [disabled] [ref=e713]:
+            - generic [ref=e714]: Подписаться
+          - generic [ref=e715]:
+            - checkbox [ref=e716] [cursor=pointer]:
+              - checkbox
+            - generic [ref=e720]:
+              - text: Я даю согласие на
+              - link "обработку персональных данных" [ref=e721] [cursor=pointer]:
+                - /url: https://fix-price.com/doc/soglashenie-na-obrabotku-personalnyh-dannyh
+    - contentinfo [ref=e722]:
+      - generic [ref=e723]:
+        - generic [ref=e724]:
+          - link [ref=e726] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e728]:
+            - generic [ref=e729]:
+              - generic [ref=e730]: Покупателям
+              - link "Карта Fix Price" [ref=e732] [cursor=pointer]:
+                - /url: /bonus
+              - link "Вопросы и ответы" [ref=e734] [cursor=pointer]:
+                - /url: /about/help
+              - link "Политика конфиденциальности" [ref=e736] [cursor=pointer]:
+                - /url: /doc/politika-konfidencialnosti
+              - link "Доставка и оплата" [ref=e738] [cursor=pointer]:
+                - /url: /doc/usloviya-dostavki
+              - link "Правовая информация" [ref=e740] [cursor=pointer]:
+                - /url: /rules
+              - link "Брошюры" [ref=e742] [cursor=pointer]:
+                - /url: /booklets
+            - generic [ref=e743]:
+              - generic [ref=e744]: О компании
+              - link "О компании" [ref=e746] [cursor=pointer]:
+                - /url: /about
+              - link "Деловая этика и комплаенс" [ref=e748] [cursor=pointer]:
+                - /url: /about/business-ethics
+              - link "Контакты" [ref=e750] [cursor=pointer]:
+                - /url: /about/contacts
+              - link "Пресс-центр" [ref=e752] [cursor=pointer]:
+                - /url: https://media.fix-price.com/
+              - link "Партнерам" [ref=e754] [cursor=pointer]:
+                - /url: /partners
+              - link "Арендодателям" [ref=e756] [cursor=pointer]:
+                - /url: /partners/for-land-lords
+              - link "Франчайзинг" [ref=e758] [cursor=pointer]:
+                - /url: /partners/franchising
+              - link "Контроль качества" [ref=e760] [cursor=pointer]:
+                - /url: /about/quality-control
+              - link "Работа у нас" [ref=e762] [cursor=pointer]:
+                - /url: /work/store
+              - link "Инвесторам" [ref=e764] [cursor=pointer]:
+                - /url: https://ir.fix-price.com/ru/
+            - generic [ref=e765]:
+              - generic [ref=e766]: Социальная ответственность компании
+              - link "Вместе для добрых дел" [ref=e768] [cursor=pointer]:
+                - /url: /good-deeds
+              - link "Планета ценит" [ref=e770] [cursor=pointer]:
+                - /url: /esg
+            - generic [ref=e771]:
+              - generic [ref=e772]: Fix Price в соцсетях
+              - generic [ref=e773]:
+                - link [ref=e774] [cursor=pointer]:
+                  - /url: https://vk.ru/fix_price
+                  - img [ref=e776]
+                - link [ref=e777] [cursor=pointer]:
+                  - /url: https://ok.ru/fixprice
+                  - img [ref=e779]
+                - link [ref=e780] [cursor=pointer]:
+                  - /url: https://dzen.ru/fixprice_russia
+                  - img [ref=e782]
+                - link [ref=e783] [cursor=pointer]:
+                  - /url: https://rutube.ru/channel/24640051/
+                  - img [ref=e785]
+                - link [ref=e786] [cursor=pointer]:
+                  - /url: https://max.ru/fix_price
+                  - img [ref=e788]
+                - link [ref=e789] [cursor=pointer]:
+                  - /url: https://l.likee.video/p/tsNJOy
+                  - img [ref=e791]
+              - generic [ref=e792]:
+                - generic [ref=e793]: Мобильное приложение Fix Price
+                - generic [ref=e794]:
+                  - link [ref=e795] [cursor=pointer]:
+                    - /url: https://apps.rustore.ru/app/ru.bestprice.fixprice
+                    - img [ref=e797]
+                  - link [ref=e798] [cursor=pointer]:
+                    - /url: https://play.google.com/store/apps/details?id=ru.bestprice.fixprice&hl=ru&gl=RU
+                    - img [ref=e800]
+                  - link [ref=e801] [cursor=pointer]:
+                    - /url: https://apps.apple.com/ru/app/fix-price-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D1%81%D0%B0%D0%BC%D0%BE%D0%B2%D1%8B%D0%B2%D0%BE%D0%B7/id1460007771
+                    - img [ref=e803]
+                  - link [ref=e804] [cursor=pointer]:
+                    - /url: https://appgallery.huawei.com/app/C105661683?sharePrepath=ag&locale=ru_RU&source=appshare&subsource=C105661683&shareTo=com.miui.notes&shareFrom=appmarket
+                    - img [ref=e806]
+              - generic [ref=e807]:
+                - text: Есть вопрос? Отправьте его нам с помощью
+                - link "формы обратной связи" [ref=e808] [cursor=pointer]:
+                  - /url: /about/help?feedback=true
+        - paragraph [ref=e809]:
+          - text: © Fix Price, 2026
+          - text: Все права защищены
+  - list [ref=e813]:
+    - listitem [ref=e814]:
+      - button [ref=e817] [cursor=pointer]

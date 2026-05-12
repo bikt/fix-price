@@ -1,0 +1,7 @@
+interface:
+  display_name: "Mobile UX"
+  short_description: "Optimizes interfaces for mobile devices"
+  default_prompt: "Use $mobile-ux to improve this mobile interface, gestures, layout, navigation, and ergonomics."
+
+policy:
+  allow_implicit_invocation: true

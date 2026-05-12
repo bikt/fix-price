@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design Superpower"
+  short_description: "Runs deep UX/UI and product design audits"
+  default_prompt: "Use $design-superpower to audit this product interface and propose concrete UX, visual, and conversion improvements."
+
+policy:
+  allow_implicit_invocation: true

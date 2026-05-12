@@ -1,0 +1,7 @@
+interface:
+  display_name: "Superpower UX Researcher"
+  short_description: "Connects UX research, usability, heuristics, conversion, UX writing, mobile UX, and design leadership"
+  default_prompt: "Use $superpower-ux-researcher with $ux-research, $usability-tester, $heuristic-eval, $conversion-optimizer, $ux-writing, $mobile-ux, $design-leadership, and $design-superpower to solve this product research problem."
+
+policy:
+  allow_implicit_invocation: true

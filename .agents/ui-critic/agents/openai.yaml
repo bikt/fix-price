@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Critic"
+  short_description: "Audits UX/UI and suggests improvements"
+  default_prompt: "Use $ui-critic to critique this interface and suggest specific visual hierarchy, readability, and UX fixes."
+
+policy:
+  allow_implicit_invocation: true

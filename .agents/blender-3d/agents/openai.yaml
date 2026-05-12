@@ -1,0 +1,7 @@
+interface:
+  display_name: "Blender 3D"
+  short_description: "Creates and improves Blender scenes and scripts"
+  default_prompt: "Use $blender-3d to create a polished Blender scene with materials, lighting, and camera setup."
+
+policy:
+  allow_implicit_invocation: true

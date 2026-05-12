@@ -1,0 +1,7 @@
+interface:
+  display_name: "UX Research"
+  short_description: "Helps with UX research and hypotheses"
+  default_prompt: "Use $ux-research to structure research questions, hypotheses, methods, and insights for this product problem."
+
+policy:
+  allow_implicit_invocation: true
