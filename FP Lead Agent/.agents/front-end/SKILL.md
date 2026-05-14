@@ -1,4 +1,4 @@
----
+﻿---
 name: front-end
 description: Builds, fixes, and improves front-end applications, websites, UI components, layouts, styling, responsive behavior, accessibility, state handling, forms, animations, and browser bugs. Use when the user asks for frontend work with HTML, CSS, JavaScript, TypeScript, React, Next.js, Vite, Tailwind, design implementation, UI polish, adaptive layouts, or client-side product features.
 ---
@@ -9,7 +9,7 @@ Use this skill for practical front-end engineering: building usable interfaces, 
 
 ## Project Memory
 
-For Fix Price work, read `fix-price-design-memory.md` in this folder before implementing UI. It captures the Design System Agent handoff: product principles, web tokens, responsive rules, component requirements, Android/Figma source priority, states, accessibility, and frontend quality gates.
+For Fix Price work, read `fix-price-design-memory.md` and `fix-price-app-design-study.md` in this folder before implementing UI. They capture the Design System Agent handoff, Figma source priority, foundation/component/template layers, legacy app scenarios, Android v2.0 target structure, migration rules, active rebuild context, states, accessibility, and frontend quality gates.
 
 Also read the project orchestration context:
 
@@ -70,3 +70,26 @@ Before finalizing, check:
 - Is there any text overflow or layout shift?
 - Do browser console errors appear during the main workflow?
 - Did the change avoid unrelated refactors?
+## Sidebar-профиль как наставник
+
+Этот `SKILL.md` описывает экспертный профиль sidebar-агента: best practices, правила роли и проектную память.
+
+В новой модели sidebar-агенты используются как галерея наставников и источник качества для `FP Lead agent`. Пользователь может прокачивать этот профиль и консультироваться с ним напрямую, но основной execution-flow идет через `FP Lead agent` и фоновых агентов.
+
+Если `FP Lead agent` запускает тебя как фонового исполнителя под задачу, работай в рамках назначенной роли и верни sync:
+
+```text
+Sync для FP Lead agent
+Агент:
+Задача:
+Статус:
+Что сделано:
+Измененные артефакты:
+Ссылки:
+Что проверено:
+Блокеры:
+Нужное решение FP Lead agent:
+```
+
+Если пользователь обращается к sidebar-агенту напрямую, это считается консультацией или прокачкой профиля. Такой вывод входит в общий процесс только когда пользователь передает его обратно `FP Lead agent` или просит учесть его в текущей задаче.
+

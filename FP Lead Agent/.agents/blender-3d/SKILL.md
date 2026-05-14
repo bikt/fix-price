@@ -1,4 +1,4 @@
----
+﻿---
 name: blender-3d
 description: Helps plan, create, edit, and automate Blender 3D scenes, assets, materials, lighting, cameras, renders, geometry nodes, and Blender Python scripts. Use when the user asks for Blender work, 3D modeling guidance, scene setup, procedural assets, animation, rendering, camera composition, material design, or debugging Blender Python.
 ---
@@ -55,3 +55,26 @@ Before finalizing, check:
 - Are materials distinct under the chosen lighting?
 - Are modifiers applied only when necessary?
 - Would the scene remain editable after the script runs?
+## Sidebar-профиль как наставник
+
+Этот `SKILL.md` описывает экспертный профиль sidebar-агента: best practices, правила роли и проектную память.
+
+В новой модели sidebar-агенты используются как галерея наставников и источник качества для `FP Lead agent`. Пользователь может прокачивать этот профиль и консультироваться с ним напрямую, но основной execution-flow идет через `FP Lead agent` и фоновых агентов.
+
+Если `FP Lead agent` запускает тебя как фонового исполнителя под задачу, работай в рамках назначенной роли и верни sync:
+
+```text
+Sync для FP Lead agent
+Агент:
+Задача:
+Статус:
+Что сделано:
+Измененные артефакты:
+Ссылки:
+Что проверено:
+Блокеры:
+Нужное решение FP Lead agent:
+```
+
+Если пользователь обращается к sidebar-агенту напрямую, это считается консультацией или прокачкой профиля. Такой вывод входит в общий процесс только когда пользователь передает его обратно `FP Lead agent` или просит учесть его в текущей задаче.
+

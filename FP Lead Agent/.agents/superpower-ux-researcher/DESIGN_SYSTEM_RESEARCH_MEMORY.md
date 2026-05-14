@@ -6,6 +6,7 @@
 
 - Локальная карта: `design-system-map.md`.
 - Локальное описание: `design-system.md`.
+- Полное исследование приложения и дизайн-системы: `SUPERPOWER_UX_RESEARCHER_FULL_APP_DS_STUDY_2026-05-14.md`.
 - Design System agent: `.agents/design-system/SKILL.md`.
 - Figma `Android v2.0`: `w6fzp4MqBpWjgSMGrZK0XD`.
 - Figma `Android Ui-kit`: `8eyN4wOGRSWnqqxEGXhheB`.

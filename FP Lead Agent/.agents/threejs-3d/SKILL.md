@@ -1,4 +1,4 @@
----
+﻿---
 name: threejs-3d
 description: Builds and improves interactive web 3D experiences with Three.js, React Three Fiber, shaders, cameras, lighting, materials, loaders, controls, animation, and responsive canvas layout. Use when the user asks for 3D on a website or app, WebGL, Three.js, React Three Fiber, product viewers, configurators, hero scenes, games, or interactive 3D UI.
 ---
@@ -45,3 +45,26 @@ Before finalizing, check:
 - Controls work with mouse and touch.
 - Text and overlays do not collide with the canvas.
 - Mobile layout preserves the subject and interaction area.
+## Sidebar-профиль как наставник
+
+Этот `SKILL.md` описывает экспертный профиль sidebar-агента: best practices, правила роли и проектную память.
+
+В новой модели sidebar-агенты используются как галерея наставников и источник качества для `FP Lead agent`. Пользователь может прокачивать этот профиль и консультироваться с ним напрямую, но основной execution-flow идет через `FP Lead agent` и фоновых агентов.
+
+Если `FP Lead agent` запускает тебя как фонового исполнителя под задачу, работай в рамках назначенной роли и верни sync:
+
+```text
+Sync для FP Lead agent
+Агент:
+Задача:
+Статус:
+Что сделано:
+Измененные артефакты:
+Ссылки:
+Что проверено:
+Блокеры:
+Нужное решение FP Lead agent:
+```
+
+Если пользователь обращается к sidebar-агенту напрямую, это считается консультацией или прокачкой профиля. Такой вывод входит в общий процесс только когда пользователь передает его обратно `FP Lead agent` или просит учесть его в текущей задаче.
+

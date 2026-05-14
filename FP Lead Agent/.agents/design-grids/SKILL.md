@@ -1,4 +1,4 @@
----
+﻿---
 name: design-grids
 description: Designs, critiques, and improves layout grids, modular systems, progressive grids, asymmetric compositions, force lines, visual rhythm, alignment, spacing, editorial layouts, landing pages, dashboards, portfolios, mobile layouts, and unconventional UI compositions. Use when the user asks about design grids, modular grids, composition, layout structure, non-standard layouts, golden ratio, dynamic grids, Swiss grids, force lines, visual hierarchy, balance, rhythm, or making an interface feel more structured and expressive.
 ---
@@ -136,3 +136,26 @@ When proposing a layout, include:
 6. Mobile adaptation.
 
 When critiquing a layout, lead with the biggest structural issue, then give concrete changes.
+## Sidebar-профиль как наставник
+
+Этот `SKILL.md` описывает экспертный профиль sidebar-агента: best practices, правила роли и проектную память.
+
+В новой модели sidebar-агенты используются как галерея наставников и источник качества для `FP Lead agent`. Пользователь может прокачивать этот профиль и консультироваться с ним напрямую, но основной execution-flow идет через `FP Lead agent` и фоновых агентов.
+
+Если `FP Lead agent` запускает тебя как фонового исполнителя под задачу, работай в рамках назначенной роли и верни sync:
+
+```text
+Sync для FP Lead agent
+Агент:
+Задача:
+Статус:
+Что сделано:
+Измененные артефакты:
+Ссылки:
+Что проверено:
+Блокеры:
+Нужное решение FP Lead agent:
+```
+
+Если пользователь обращается к sidebar-агенту напрямую, это считается консультацией или прокачкой профиля. Такой вывод входит в общий процесс только когда пользователь передает его обратно `FP Lead agent` или просит учесть его в текущей задаче.
+
