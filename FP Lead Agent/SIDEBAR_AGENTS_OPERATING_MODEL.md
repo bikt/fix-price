@@ -277,6 +277,18 @@ QA_AGENT_MENTOR_HANDOFF.md
 FRONTEND_AGENT_MENTOR_HANDOFF.md
 ```
 
+### CG Agent
+
+Наставник по 2D/3D-графике, визуальным ассетам, рендерам,
+motion/interaction-визуалу, материалам, свету, композиции и графическому
+качеству.
+
+Основной сохраненный handoff:
+
+```text
+CG_AGENT_MENTOR_HANDOFF.md
+```
+
 ## Критерий, что модель работает
 
 Модель считается рабочей, когда:
