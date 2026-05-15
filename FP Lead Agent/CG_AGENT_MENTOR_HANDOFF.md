@@ -55,6 +55,8 @@
 - `FP Lead Agent/DESIGN_SYSTEM_AND_APP_STUDY_2026-05-14.md`
 - `FP Lead Agent/AGENTS.md`
 - `FP Lead Agent/designer-skill-profile.md`
+- `FP Lead Agent/FIPI_MASCOT_CG_STYLE_GUIDE.md`, если задача содержит маскота
+  Фипи
 
 Figma source of truth:
 
@@ -100,6 +102,9 @@ CG/sidebar skills:
 - Перед финальной вставкой рендера или ассета в Figma `FP Lead agent` обязан
   показать результат пользователю в чат и получить явный approve. До approve
   вставка в Figma заблокирована.
+- Если в задаче появляется Фипи, фоновый CG-агент обязан использовать
+  `FIPI_MASCOT_CG_STYLE_GUIDE.md` как канон персонажа: зеленое тело, синие
+  иголки, светло-зеленое пятно только на пузике, лицо без светлой маски.
 
 ## Чеклист
 
