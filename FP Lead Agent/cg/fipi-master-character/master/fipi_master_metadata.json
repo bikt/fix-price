@@ -1,0 +1,49 @@
+{
+  "asset_name": "Fipi Master Character",
+  "version": "0.1",
+  "status": "master_candidate_requires_approval",
+  "created_at": "2026-05-15T15:53:43",
+  "canonical_reference": "C:\\Users\\mrbik\\Desktop\\AI projects\\projects\\fix-price\\FP Lead Agent\\cg\\fipi-master-character\\reference\\fipi_master_reference.png",
+  "master_blend": "C:\\Users\\mrbik\\Desktop\\AI projects\\projects\\fix-price\\FP Lead Agent\\cg\\fipi-master-character\\master\\master.blend",
+  "preview": "C:\\Users\\mrbik\\Desktop\\AI projects\\projects\\fix-price\\FP Lead Agent\\cg\\fipi-master-character\\master\\previews\\fipi_master_joy_preview.png",
+  "comparison": "C:\\Users\\mrbik\\Desktop\\AI projects\\projects\\fix-price\\FP Lead Agent\\cg\\fipi-master-character\\master\\previews\\fipi_master_reference_comparison.png",
+  "exports": {
+    "glb": "C:\\Users\\mrbik\\Desktop\\AI projects\\projects\\fix-price\\FP Lead Agent\\cg\\fipi-master-character\\master\\exports\\fipi_master.glb"
+  },
+  "identity_lock": {
+    "face_structure": "locked",
+    "eye_shape": "locked",
+    "body_proportions": "locked",
+    "silhouette": "locked",
+    "textures": "locked_after_approval",
+    "materials": "locked_after_approval",
+    "colors": "locked",
+    "topology": "locked_after_approval",
+    "uv": "locked_after_approval",
+    "rig": "locked_after_approval"
+  },
+  "allowed_scene_changes": [
+    "pose",
+    "animation",
+    "clothes",
+    "accessories",
+    "lighting",
+    "environment",
+    "camera",
+    "composition"
+  ],
+  "blocked_scene_changes": [
+    "new mesh for the character",
+    "new face design",
+    "changed body proportions",
+    "changed spine pattern",
+    "changed color palette",
+    "belly patch moved onto face",
+    "different material identity"
+  ],
+  "production_notes": [
+    "This is the first reusable Blender master candidate generated from the character bible.",
+    "It includes named objects, separated materials, a reusable rig scaffold, metadata, preview, and comparison.",
+    "It is not yet a final AAA/manual sculpt; approval should require visual review against the canonical reference."
+  ]
+}
