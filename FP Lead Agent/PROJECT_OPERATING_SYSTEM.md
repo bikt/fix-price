@@ -168,6 +168,10 @@ Verdict:
 - QA или Lead-check выполнен;
 - Definition of Done выполнен или есть explicit risk.
 
+Для `cg-asset` с финальной вставкой в Figma есть отдельный обязательный gate:
+сначала render/asset preview отправляется пользователю в чат, затем ожидается
+явный approve, и только после этого разрешена вставка в Figma.
+
 Для Figma migration финальная формула:
 
 ```text
